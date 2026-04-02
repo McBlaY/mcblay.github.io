@@ -12,14 +12,15 @@ layout: default
 <div id="research-cards" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
   {% assign research_sorted = site.research | sort: 'date' | reverse %}
   {% for item in research_sorted %}
-  <div class="research-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw; height: 200px;">
+  <div class="research-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw; height: 180px;">
     <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #fff; display: flex; align-items: center; justify-content: center;">
       <img src="{{ item.image | default: '/assets/research1.jpg' }}" alt="{{ item.title }}" style="width: 100%; height: auto; object-fit: cover; display: block;">
     </div>
-    <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center; overflow: hidden;">
-      <h2 style="margin: 0 0 4px; font-size: 1em;"><a href="{{ item.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ item.title }}</a></h2>
-      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ item.excerpt | strip_html | truncatewords: 20 }}</p>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
+    <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
+      <h2 style="margin: 8px 0 4px; font-size: 1em;"><a href="{{ item.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ item.title }}</a></h2>
+      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ item.excerpt | strip_html | truncatewords: 50 }}</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span style="color: var(--muted); font-size: 0.82em;">{{ item.date | date: "%B %d, %Y" }}</span>
         <div>
           <a href="{{ item.paper | default: '#' }}" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
             <i class="fas fa-file-alt"></i> Paper
@@ -28,7 +29,6 @@ layout: default
             <i class="fab fa-github"></i> Code
           </a>
         </div>
-        <span style="color: var(--muted); font-size: 0.82em;">{{ item.date | date: "%B %d, %Y" }}</span>
       </div>
     </div>
   </div>
