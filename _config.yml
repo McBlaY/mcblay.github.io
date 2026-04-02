@@ -28,8 +28,3 @@ collections:
     output: true
     permalink: /projects/:slug.html
 
-pagination:
-  enabled: true
-
-plugins:
-  - jekyll-paginate-v2
