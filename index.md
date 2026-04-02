@@ -65,8 +65,8 @@ permalink: /
         <div style="font-size:1.15em;font-weight:600;color:var(--text);">Michel Torny</div>
         <div style="display:flex;gap:16px;font-size:1.4em;">
           <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/yourhandle" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/tornymichel" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
         </div>
       </div>
       <div class="profile-text">
@@ -102,8 +102,8 @@ permalink: /
   <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center;">
     <div style="display:flex;gap:20px;font-size:1.3em;">
       <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://twitter.com/yourhandle" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://x.com/tornymichel" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
     <div style="font-size:0.85em;color:var(--muted);">
       &copy; {{ 'now' | date: "%Y" }} Michel Torny &middot;
