@@ -44,7 +44,7 @@ permalink: /
 <button id="theme-toggle" title="Toggle light/dark theme"></button>
 
 <div style="position:relative;">
-  <img src="/assets/images/header.png" alt="Header" style="width:100%;max-height:220px;object-fit:cover;display:block;">
+  <img src="/assets/images/header.png" alt="Header" style="width:100%;max-height:215px;object-fit:cover;display:block;">
 </div>
 
 <div style="background:var(--bg);border-top:1px solid var(--hero-border);flex:1;">
