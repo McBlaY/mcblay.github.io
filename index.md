@@ -86,7 +86,7 @@ permalink: /
           <img src="{{ item.image | default: '/assets/images/header.png' }}" alt="{{ item.title }}">
         </div>
         <div class="card-body">
-          <h3 style="margin-top:0;">{% if item.collection == 'blogs' %}<a href="/blog" class="card-type">Blog</a>{% elsif item.collection == 'research' %}<a href="/research" class="card-type">Research</a>{% elsif item.collection == 'projects' %}<a href="/projects" class="card-type">Project</a>{% endif %} <span style="color:var(--muted);font-weight:300;">|</span> <a href="{{ item.url }}" style="color:var(--card-text);text-decoration:none;">{{ item.title }}</a></h3>
+          <h3 style="margin-top:0;">{% if item.collection == 'blogs' %}<a href="/blog" class="card-type">Blog</a>{% elsif item.collection == 'research' %}<a href="/research" class="card-type">Research</a>{% elsif item.collection == 'projects' %}<a href="/projects" class="card-type">Project</a>{% endif %} <span style="color:var(--muted);font-weight:300;">|</span> <a href="{{ item.url }}" target="_blank" style="color:var(--card-text);text-decoration:none;">{{ item.title }}</a></h3>
           <p>{{ item.excerpt | strip_html | truncatewords: 20 }}</p>
           <span class="card-meta">{{ item.date | date: "%B %d, %Y" }}</span>
         </div>

@@ -16,7 +16,7 @@ layout: default
       <img src="{{ project.image | default: '/assets/project1.jpg' }}" alt="{{ project.title }}" style="width: 100%; height: auto; object-fit: cover; display: block;">
     </div>
     <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
-      <h2 style="margin-top:0;"><a href="{{ project.url }}" style="color: var(--card-text); text-decoration: none;">{{ project.title }}</a></h2>
+      <h2 style="margin-top:0;"><a href="{{ project.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ project.title }}</a></h2>
       <p>{{ project.excerpt }}</p>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
         <div>

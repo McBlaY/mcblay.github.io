@@ -17,7 +17,7 @@ layout: default
       <img src="{{ item.image | default: '/assets/research1.jpg' }}" alt="{{ item.title }}" style="width: 100%; height: auto; object-fit: cover; display: block;">
     </div>
     <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
-      <h2 style="margin-top:0;"><a href="{{ item.url }}" style="color: var(--card-text); text-decoration: none;">{{ item.title }}</a></h2>
+      <h2 style="margin-top:0;"><a href="{{ item.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ item.title }}</a></h2>
       <p>{{ item.excerpt }}</p>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
         <div>
