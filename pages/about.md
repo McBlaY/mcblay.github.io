@@ -41,18 +41,14 @@ layout: default
 <!-- Header -->
 <div class="about-header">
   <img src="/assets/images/profile_pic.jpg" alt="Hoese Michel Tornyeviadzi" onerror="this.style.background='#444';this.removeAttribute('src')">
-  <div class="about-header-text">
+  <div class="about-header-text" style="align-self: center;">
     <h1>Hoese Michel Tornyeviadzi</h1>
-    <div class="subtitle">PhD · Senior Data Scientist · HydroInformatics Researcher</div>
-    <div style="font-size:0.9em; color:var(--muted); margin-bottom:12px;">
-      <i class="fas fa-envelope" style="margin-right:6px;"></i><a href="mailto:mictorny2000@gmail.com" style="color:var(--muted);text-decoration:none;">mictorny2000@gmail.com</a>
-      &nbsp;&middot;&nbsp;
-      <i class="fas fa-graduation-cap" style="margin-right:6px;"></i><a href="https://scholar.google.com/citations?user=Hoese+Michel+Tornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;">Google Scholar</a>
-    </div>
+    <div class="subtitle">Data & Applied Scientist</div>
     <div class="social-links">
       <a href="https://github.com/McBlaY" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://x.com/tornymichel" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://scholar.google.com/citations?user=Hoese+Michel+Tornyeviadzi" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
     </div>
   </div>
 </div>
@@ -86,13 +82,6 @@ layout: default
       <span class="tl-date">Jun 2024 – Present</span>
     </div>
     <div class="tl-org">HULO.AI</div>
-    <ul>
-      <li>Research Lead and Domain Expert for Hydro-Informatics industry applications &amp; use cases.</li>
-      <li>Developed ML models for flow forecasting; improved leak classification precision by 36%.</li>
-      <li>Improved pressure interpolation (25% ↓ in MAE) and interpolation speed by a factor of 400.</li>
-      <li>Introduced Dempster-Shafer leak localization, reducing search area by a factor of 10.</li>
-      <li>Developed efficient methods for automatic verification &amp; hydraulic calibration of WDNs.</li>
-    </ul>
   </div>
 
   <div class="timeline-item">
@@ -101,11 +90,6 @@ layout: default
       <span class="tl-date">Jan 2024 – Dec 2024</span>
     </div>
     <div class="tl-org">Smart Water Lab, NTNU</div>
-    <ul>
-      <li>Machine Learning Predictive Control for Drinking Water Treatment.</li>
-      <li>Leakage Diagnosis and Predictive Maintenance of WDN assets.</li>
-      <li>Root Cause Analysis of Anomalies using ML &amp; Causal Inference.</li>
-    </ul>
   </div>
 
   <div class="timeline-item">
@@ -114,64 +98,7 @@ layout: default
       <span class="tl-date">Jan 2020 – Dec 2023</span>
     </div>
     <div class="tl-org">Smart Water Lab, NTNU</div>
-    <ul>
-      <li>Developed DMA-Agnostic ML models for Leakage Detection in Distribution Networks.</li>
-      <li>Proposed efficient method for optimal placement of pressure sensors for Leakage Detection.</li>
-      <li>Developed Zero-Shot Short-Term and Long-Term ML models for Flow/Demand forecasting.</li>
-      <li>Developed transferable ML models for Pipe Failure prediction and repair prioritization.</li>
-    </ul>
   </div>
-</div>
-
-<!-- Skills -->
-<div class="about-section">
-  <h2><i class="fas fa-code" style="margin-right:8px;"></i>Skills &amp; Competences</h2>
-  <p style="color:var(--muted);font-size:0.9em;margin-bottom:10px;">Technical</p>
-  <div class="skills-grid" style="margin-bottom:18px;">
-    <span class="skill-tag">Python</span>
-    <span class="skill-tag">SQL</span>
-    <span class="skill-tag">PySpark</span>
-    <span class="skill-tag">Databricks</span>
-    <span class="skill-tag">TensorFlow</span>
-    <span class="skill-tag">Scikit-Learn</span>
-    <span class="skill-tag">MLflow</span>
-    <span class="skill-tag">PyTorch</span>
-  </div>
-  <p style="color:var(--muted);font-size:0.9em;margin-bottom:10px;">Competences</p>
-  <div class="skills-grid">
-    <span class="skill-tag">Time Series Forecasting</span>
-    <span class="skill-tag">Leakage &amp; Anomaly Detection</span>
-    <span class="skill-tag">Predictive Maintenance</span>
-    <span class="skill-tag">HydroInformatics</span>
-    <span class="skill-tag">Causal Inference</span>
-    <span class="skill-tag">Deep Learning</span>
-  </div>
-</div>
-
-<!-- Publications -->
-<div class="about-section">
-  <h2><i class="fas fa-book-open" style="margin-right:8px;"></i>Selected Publications <span style="font-size:0.75em;color:var(--muted);font-weight:400;">(5 of 17)</span></h2>
-  <ul class="pub-list">
-    <li>Tornyeviadzi, H. M., et al. (2024). Node search space reduction for optimal placement of pressure sensors in WDNs for leakage detection. <em>Alexandria Engineering Journal</em>, 94, 325–338.</li>
-    <li>Tornyeviadzi, H. M., &amp; Seidu, R. (2023). Leakage detection in WDNs via 1D CNN deep autoencoder for multivariate SCADA data. <em>Engineering Applications of Artificial Intelligence</em>, 122, 106062.</li>
-    <li>Tornyeviadzi, H. M., et al. (2023). Semi-supervised Anomaly Detection Methods for Leakage Identification in WDNs: A Comparative Study. <em>Machine Learning with Applications</em>, 100501.</li>
-    <li>Tornyeviadzi, H. M., et al. (2023). Robust night flow analysis in WDNs: A BiLSTM deep autoencoder approach. <em>Advanced Engineering Informatics</em>, 58, 102135.</li>
-    <li>Nguyen, L. V., Tornyeviadzi, H. M., et al. (2022). Predicting discharges in sewer pipes using an integrated LSTM and entropy A-TOPSIS framework. <em>Water</em>, 14(3), 300.</li>
-  </ul>
-</div>
-
-<!-- Presentations -->
-<div class="about-section">
-  <h2><i class="fas fa-microphone" style="margin-right:8px;"></i>Presentations &amp; Talks</h2>
-  <ul class="pub-list">
-    <li>Improving the Scalability of DMA based Leakage Detection through AI. <em>Nordic Water Conference (NORDIWA)</em>, Copenhagen, Denmark, 2024. (Oral)</li>
-    <li>Scalable District Metering Area Agnostic Leakage Detection. <em>World Water Congress</em>, Canada, 2024. (Oral)</li>
-    <li>Near Realtime DMA Agnostic Leakage Detection in WDNs. <em>North American Water Loss Conference &amp; Exposition</em>, USA, 2023. (Oral)</li>
-    <li>Performance Evaluation of Anomaly Detection Algorithms for Leakage Detection. <em>IWA Water Loss Asia</em>, Malaysia, 2022. (Oral)</li>
-    <li>DMA Based Incipient Leakage Detection via BiLSTM Deep Autoencoder. <em>IWA World Water Congress &amp; Exhibition</em>, Copenhagen, 2022. (Poster)</li>
-    <li>Domain Agnostic ML Methods for Anomaly Detection in WDNs. <em>SINTEF</em>, Norway. (Invited Talk)</li>
-    <li>Data Driven Leakage Detection in WDNs. <em>VANFORSK</em>, Norway. (Invited Talk)</li>
-  </ul>
 </div>
 
 <!-- Journal Reviewer -->
