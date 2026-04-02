@@ -12,14 +12,14 @@ layout: default
 <div id="blog-cards" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
   {% assign sorted_blogs = site.blogs | sort: 'date' | reverse %}
   {% for post in sorted_blogs %}
-  <div class="blog-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
-    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+  <div class="blog-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;height: 200px;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #fff; display: flex; align-items: center; justify-content: center;">
       <img src="{{ post.image | default: '/assets/images/header.png' }}" alt="{{ post.title }}" style="width: 100%; height: auto; object-fit: cover; display: block;">
     </div>
-    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
-      <h2 style="margin-top:0;"><a href="{{ post.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+    <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center; overflow: hidden;">
+      <h2 style="margin: 0 0 4px; font-size: 1em;"><a href="{{ post.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ post.title }}</a></h2>
+      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ post.excerpt }}</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
         <div>
           <a href="{{ post.website | default: '#' }}" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
             <i class="fas fa-globe"></i> Website
