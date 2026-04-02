@@ -18,10 +18,10 @@ layout: default
     <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
       <h2 style="margin: 8px 0 4px; font-size: 1em;"><a href="{{ project.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ project.title }}</a></h2>
       <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ project.excerpt | strip_html | truncatewords: 50 }}</p>
-      <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 8px;">
         <span style="color: var(--muted); font-size: 0.82em;">{{ project.date | date: "%B %d, %Y" }}</span>
         <div>
-          <a href="{{ project.demo | default: '#' }}" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+          <a href="{{ project.demo | default: '#' }}" target="_blank" style="margin-right: 8px; color: #1abc9c; text-decoration: none; font-weight: bold;">
             <i class="fas fa-rocket"></i> Demo
           </a>
           <a href="{{ project.code | default: '#' }}" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
