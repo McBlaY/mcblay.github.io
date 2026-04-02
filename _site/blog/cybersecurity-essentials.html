@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Essentials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #181818;
+      --text: #eeeeee;
+      --card-bg: #2a2a2a;
+      --card-text: #eeeeee;
+      --muted: #999999;
+      --accent: #1abc9c;
+      --section-border: #333;
+    }
+    [data-theme="light"] {
+      --bg: #f5f5f5;
+      --text: #222222;
+      --card-bg: #e0e0e0;
+      --card-text: #222222;
+      --muted: #666666;
+      --accent: #0e9b78;
+      --section-border: #ccc;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      transition: background 0.25s, color 0.25s;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    #theme-toggle {
+      position: fixed;
+      top: 14px;
+      right: 16px;
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--muted);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      z-index: 9999;
+      transition: background 0.25s, color 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    #theme-toggle:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle" title="Toggle light/dark theme"></button>
+  <div style="max-width: 980px; margin: 0 auto; padding: 32px 20px; flex: 1;">
+    <p>Protecting your digital life. Essential cybersecurity tips. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+
+  </div>
+  <script>
+  (function() {
+    var html = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      html.setAttribute('data-theme', t);
+      btn.innerHTML = t === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    }
+    applyTheme(localStorage.getItem('theme') || 'dark');
+    btn.addEventListener('click', function() {
+      var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+  })();
+  </script>
+  <footer style="background:var(--card-bg);border-top:1px solid var(--section-border);padding:24px 20px;text-align:center;">
+    <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center;">
+      <div style="display:flex;gap:20px;font-size:1.3em;">
+        <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div style="font-size:0.85em;color:var(--muted);">
+        &copy; 2026 Michel Torny &middot;
+        <a href="/blog" style="color:var(--muted);text-decoration:none;margin:0 6px;">Blog</a>
+        <a href="/research" style="color:var(--muted);text-decoration:none;margin:0 6px;">Research</a>
+        <a href="/projects" style="color:var(--muted);text-decoration:none;margin:0 6px;">Projects</a>
+        <a href="/about" style="color:var(--muted);text-decoration:none;margin:0 6px;">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

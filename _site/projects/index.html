@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  <style>
+    :root {
+      --bg: #181818;
+      --text: #eeeeee;
+      --card-bg: #2a2a2a;
+      --card-text: #eeeeee;
+      --muted: #999999;
+      --accent: #1abc9c;
+      --section-border: #333;
+    }
+    [data-theme="light"] {
+      --bg: #f5f5f5;
+      --text: #222222;
+      --card-bg: #e0e0e0;
+      --card-text: #222222;
+      --muted: #666666;
+      --accent: #0e9b78;
+      --section-border: #ccc;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      transition: background 0.25s, color 0.25s;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    #theme-toggle {
+      position: fixed;
+      top: 14px;
+      right: 16px;
+      background: var(--card-bg);
+      color: var(--text);
+      border: 1px solid var(--muted);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.1em;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+      z-index: 9999;
+      transition: background 0.25s, color 0.25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+    #theme-toggle:hover { opacity: 0.8; }
+  </style>
+</head>
+<body>
+  <button id="theme-toggle" title="Toggle light/dark theme"></button>
+  <div style="max-width: 980px; margin: 0 auto; padding: 32px 20px; flex: 1;">
+    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+  <a href="/" style="color: #1abc9c; text-decoration: none; font-size: 1.3em;"><i class="fas fa-home"></i></a>
+  <span style="color: #aaa; font-size: 1.1em;">/</span>
+  <h1 style="margin: 0; font-size: 1.6em;">Projects</h1>
+</div>
+
+<div id="projects-cards" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project1.jpg" alt="Web Portfolio App" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project1.html" style="color: var(--card-text); text-decoration: none;">Web Portfolio App</a></h2>
+      <p><p>A responsive web application for showcasing portfolios. Built with React and Node.js, featuring dynamic content loading and SEO optimization.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo1" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project1" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">January 15, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project2.jpg" alt="Mobile Task Manager" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project2.html" style="color: var(--card-text); text-decoration: none;">Mobile Task Manager</a></h2>
+      <p><p>Cross-platform mobile app for task management. Includes offline sync, notifications, and collaborative features.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo2" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project2" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">February 01, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project3.jpg" alt="Data Visualization Library" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project3.html" style="color: var(--card-text); text-decoration: none;">Data Visualization Library</a></h2>
+      <p><p>Open-source library for creating interactive charts. Supports multiple data formats and export options.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo3" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project3" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">February 20, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project4.jpg" alt="IoT Home Automation" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project4.html" style="color: var(--card-text); text-decoration: none;">IoT Home Automation</a></h2>
+      <p><p>System for automating home devices. Includes voice control, energy monitoring, and security features.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo4" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project4" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">March 10, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project5.jpg" alt="E-commerce Platform" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project5.html" style="color: var(--card-text); text-decoration: none;">E-commerce Platform</a></h2>
+      <p><p>Full-stack e-commerce solution with payment integration. Features product catalog, shopping cart, and admin dashboard.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo5" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project5" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">March 25, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="project-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw;">
+    <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #111; display: flex; align-items: center; justify-content: center;">
+      <img src="/assets/project5.jpg" alt="E-commerce Platform" style="width: 100%; height: auto; object-fit: cover; display: block;" />
+    </div>
+    <div style="flex: 0 0 65%; padding: 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center;">
+      <h2 style="margin-top:0;"><a href="/projects/project5-copy.html" style="color: var(--card-text); text-decoration: none;">E-commerce Platform</a></h2>
+      <p><p>Full-stack e-commerce solution with payment integration. Features product catalog, shopping cart, and admin dashboard.</p>
+</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div>
+          <a href="https://example.com/demo5" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fas fa-rocket"></i> Demo
+          </a>
+          <a href="https://github.com/user/project5" target="_blank" style="color: #1abc9c; text-decoration: none; font-weight: bold;">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+        <span style="color: var(--muted); font-size: 0.82em;">March 28, 2026</span>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<div id="projects-pagination" style="text-align: center; margin-top: 40px;"></div>
+
+<script>
+(function() {
+  var perPage = 5;
+  var cards = Array.from(document.querySelectorAll('.project-card'));
+  var nav = document.getElementById('projects-pagination');
+  var totalPages = Math.ceil(cards.length / perPage);
+  if (totalPages <= 1) { nav.style.display = 'none'; }
+
+  function showPage(page) {
+    cards.forEach(function(card, i) {
+      card.style.display = (i >= (page - 1) * perPage && i < page * perPage) ? 'flex' : 'none';
+    });
+    renderNav(page);
+    window.scrollTo(0, 0);
+  }
+
+  function renderNav(current) {
+    var html = '';
+    if (current > 1) html += '<a href="#" data-page="' + (current - 1) + '" style="margin: 0 8px; color: #1abc9c; text-decoration: none;">&larr; Prev</a>';
+    for (var p = 1; p <= totalPages; p++) {
+      if (p === current) {
+        html += '<strong style="margin: 0 6px;">' + p + '</strong>';
+      } else {
+        html += '<a href="#" data-page="' + p + '" style="margin: 0 6px; color: #1abc9c; text-decoration: none;">' + p + '</a>';
+      }
+    }
+    if (current < totalPages) html += '<a href="#" data-page="' + (current + 1) + '" style="margin: 0 8px; color: #1abc9c; text-decoration: none;">Next &rarr;</a>';
+    nav.innerHTML = html;
+    nav.querySelectorAll('a[data-page]').forEach(function(a) {
+      a.addEventListener('click', function(e) { e.preventDefault(); showPage(+this.dataset.page); });
+    });
+  }
+
+  showPage(1);
+})();
+</script>
+
+
+  </div>
+  <script>
+  (function() {
+    var html = document.documentElement;
+    var btn = document.getElementById('theme-toggle');
+    function applyTheme(t) {
+      html.setAttribute('data-theme', t);
+      btn.innerHTML = t === 'dark' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    }
+    applyTheme(localStorage.getItem('theme') || 'dark');
+    btn.addEventListener('click', function() {
+      var next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+  })();
+  </script>
+  <footer style="background:var(--card-bg);border-top:1px solid var(--section-border);padding:24px 20px;text-align:center;">
+    <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center;">
+      <div style="display:flex;gap:20px;font-size:1.3em;">
+        <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourhandle" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div style="font-size:0.85em;color:var(--muted);">
+        &copy; 2026 Michel Torny &middot;
+        <a href="/blog" style="color:var(--muted);text-decoration:none;margin:0 6px;">Blog</a>
+        <a href="/research" style="color:var(--muted);text-decoration:none;margin:0 6px;">Research</a>
+        <a href="/projects" style="color:var(--muted);text-decoration:none;margin:0 6px;">Projects</a>
+        <a href="/about" style="color:var(--muted);text-decoration:none;margin:0 6px;">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
