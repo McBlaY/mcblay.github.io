@@ -17,7 +17,7 @@ layout: default
     </div>
     <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: center; overflow: hidden;">
       <h2 style="margin: 0 0 4px; font-size: 1em;"><a href="{{ project.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ project.title }}</a></h2>
-      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ project.excerpt }}</p>
+      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ project.excerpt | strip_html | truncatewords: 20 }}</p>
       <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 6px;">
         <div>
           <a href="{{ project.demo | default: '#' }}" target="_blank" style="margin-right: 18px; color: #1abc9c; text-decoration: none; font-weight: bold;">
