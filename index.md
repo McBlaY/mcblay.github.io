@@ -4,6 +4,7 @@ title: My Personal Blog Home
 permalink: /
 ---
 <script>(function(){var t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);})();</script>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏠</text></svg>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <style>
   :root { --bg:#181818; --text:#eeeeee; --hero-border:#333333; --accent:#1abc9c; --card-bg:#2a2a2a; --card-text:#eeeeee; --muted:#999999; --section-border:#333; }
