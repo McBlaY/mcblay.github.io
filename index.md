@@ -67,9 +67,10 @@ permalink: /
           <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
           <a href="https://x.com/tornymichel" target="_blank" style="color:var(--muted);text-decoration:none;" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://scholar.google.com/citations?user=Hoese+Michel+Tornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
         </div>
       </div>
-      <div class="profile-text">
+      <div class="profile-text" style="align-self: center;">
         <h1 style="margin:0 0 18px;font-size:1.9em;text-align:center;">Michel Torny, PhD</h1>
         <p>Applied Scientist at HULO.AI and PhD in HydroInformatics from NTNU. I specialise in machine learning for water distribution networks — leakage detection, flow forecasting, anomaly detection, and predictive maintenance. My work spans academic research (17 journal publications) and industrial applications, bridging deep learning with real-world water infrastructure challenges. I have presented at major international conferences and delivered invited talks at SINTEF and VANFORSK.</p>
       </div>
