@@ -62,7 +62,6 @@ permalink: /
     <div class="profile">
       <div style="display:flex;flex-direction:column;align-items:center;gap:10px;flex-shrink:0;">
         <img src="/assets/images/profile_pic.jpg" alt="Michel Torny, PhD" onerror="this.style.background='#444';this.removeAttribute('src')" style="width:220px;height:220px;border-radius:50%;object-fit:cover;background:var(--card-bg);">
-        <div style="font-size:1.15em;font-weight:600;color:var(--text);">Michel Torny</div>
         <div style="display:flex;gap:16px;font-size:1.4em;">
           <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
@@ -72,7 +71,7 @@ permalink: /
       </div>
       <div class="profile-text" style="align-self: center;">
         <h1 style="margin:0 0 18px;font-size:1.9em;text-align:center;">Michel Torny, PhD</h1>
-        <p>Applied Scientist at HULO.AI and PhD in HydroInformatics from NTNU. I specialise in machine learning for water distribution networks — leakage detection, flow forecasting, anomaly detection, and predictive maintenance. My work spans academic research (17 journal publications) and industrial applications, bridging deep learning with real-world water infrastructure challenges. I have presented at major international conferences and delivered invited talks at SINTEF and VANFORSK.</p>
+        <p>Applied Scientist at HULO.AI and PhD in HydroInformatics from NTNU. I specialise in machine learning for water distribution networks — leakage detection, flow forecasting, anomaly detection, and predictive maintenance. My work spans academic research (<a href="https://scholar.google.com/citations?user=Hoese+Michel+Tornyeviadzi" target="_blank" style="color:var(--accent);text-decoration:none;">17 journal publications</a>) and industrial applications, bridging deep learning with real-world water infrastructure challenges. I have presented at major international conferences and delivered invited talks at SINTEF and VANFORSK.</p>
       </div>
     </div>
 
