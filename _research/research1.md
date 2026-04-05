@@ -7,7 +7,7 @@ date: 2023-01-01  # Publication date
 categories: [tech, tutorial]  # Categories for organization
 tags: [github, markdown]  # Tags for search
 description: "A short summary of what this post is about for SEO and previews."  # Meta description
-author: "Your Name"  # Author name
+author: "Michel Torny"  # Author name
 layout: default  # Layout to use
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Mobile Task Manager"
 date: 2026-02-01
+author: "Michel Torny"
 image: /assets/project2.jpg
 demo: https://example.com/demo2
 code: https://github.com/user/project2

@@ -1,6 +1,7 @@
 ---
 title: "The Future of AI"
 date: 2023-04-08
+author: "Michel Torny"
 image: /assets/blog7.jpg
 website: https://futureai.com
 github: https://github.com/user/repo7

@@ -1,6 +1,7 @@
 ---
 title: "Building Scalable Apps"
 date: 2023-04-07
+author: "Michel Torny"
 image: /assets/blog6.jpg
 website: https://scalableapps.com
 github: https://github.com/user/repo6

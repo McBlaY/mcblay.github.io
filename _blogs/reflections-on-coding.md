@@ -1,6 +1,7 @@
 ---
 title: "Reflections on Coding"
 date: 2023-04-11
+author: "Michel Torny"
 image: /assets/blog10.jpg
 website: https://codingreflections.com
 github: https://github.com/user/repo10

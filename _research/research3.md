@@ -1,6 +1,7 @@
 ---
 title: "Quantum Algorithms"
 date: 2023-06-10
+author: "Michel Torny"
 image: /assets/research3.jpg
 paper: https://example.com/paper3
 code: https://github.com/user/research3

@@ -1,6 +1,7 @@
 ---
 title: "E-commerce Platform"
 date: 2026-03-25
+author: "Michel Torny"
 image: /assets/project5.jpg
 demo: https://example.com/demo5
 code: https://github.com/user/project5

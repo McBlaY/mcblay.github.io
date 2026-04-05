@@ -1,6 +1,7 @@
 ---
 title: "My First Blog Post"
 date: 2026-04-02
+author: "Michel Torny"
 image: /assets/images/header.png
 website: https://example.com
 github: https://github.com/user/repo1

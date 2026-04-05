@@ -1,6 +1,7 @@
 ---
 title: "A Journey Through Code"
 date: 2023-04-04
+author: "Michel Torny"
 image: /assets/blog3.jpg
 website: https://codejourney.com
 github: https://github.com/user/repo3

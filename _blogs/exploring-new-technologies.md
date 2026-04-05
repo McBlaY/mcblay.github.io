@@ -1,6 +1,7 @@
 ---
 title: "Exploring New Technologies"
 date: 2026-04-03
+author: "Michel Torny"
 image: /assets/blog2.jpg
 website: https://techsite.com
 github: https://github.com/user/repo2

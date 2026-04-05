@@ -1,6 +1,7 @@
 ---
 title: "Machine Learning Basics"
 date: 2023-04-06
+author: "Michel Torny"
 image: /assets/blog5.jpg
 website: https://mlbasics.com
 github: https://github.com/user/repo5

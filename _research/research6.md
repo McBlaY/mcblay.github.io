@@ -1,6 +1,7 @@
 ---
 title: "Human-Computer Interaction"
 date: 2024-06-01
+author: "Michel Torny"
 image: /assets/research5.jpg
 paper: https://example.com/paper5
 code: https://github.com/user/research5

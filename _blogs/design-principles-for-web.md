@@ -1,6 +1,7 @@
 ---
 title: "Design Principles for Web"
 date: 2023-04-05
+author: "Michel Torny"
 image: /assets/blog4.jpg
 website: https://webdesign.com
 github: https://github.com/user/repo4
