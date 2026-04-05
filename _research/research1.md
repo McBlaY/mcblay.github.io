@@ -195,7 +195,7 @@ You can include raw HTML:
 
 ### Plotly Chart Example
 
-<div id="plotly-chart" style="width: 100%; height: 400px;"></div>
+<div id="plotly-chart" style="width: auto; height: 400px;"></div>
 <script>
   var data = [{
     x: [1, 2, 3, 4, 5],
@@ -211,7 +211,7 @@ You can include raw HTML:
     yaxis: { title: 'Y Values' }
   };
 
-  Plotly.newPlot('plotly-chart', data, layout);
+  Plotly.newPlot('plotly-chart', data, layout, {responsive: true});
 </script>
 
 
