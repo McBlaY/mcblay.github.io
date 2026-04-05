@@ -78,7 +78,10 @@
       border-radius: 4px;
       overflow-x: auto;
       margin: 1em 0;
-      font-size: 0.9em;
+      font-size: 10pt;
+    }
+    pre[class*="language-"] {
+      font-size: 10pt;
     }
     code {
       font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
@@ -86,7 +89,29 @@
       color: var(--accent);
       padding: 0.15em 0.3em;
       border-radius: 3px;
-      font-size: 0.85em;
+      font-size: 10pt;
+    }
+    /* Bibliography and References */
+    .footnotes, .references, .citations {
+      font-size: 10pt;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    .footnote, .reference, .citation {
+      font-size: 10pt;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    /* Footnote styling */
+    .footnotes ol, .footnotes li {
+      font-size: 10pt;
+      line-height: 1.4;
+      color: var(--muted);
+    }
+    /* BibTeX and citation blocks */
+    pre[class*="bibtex"], pre[class*="citation"] {
+      font-size: 10pt;
+      line-height: 1.3;
     }
     pre code {
       background: none;
@@ -196,7 +221,7 @@
   <li><em>Italic text</em> using single asterisks.</li>
   <li><strong><em>Bold and italic</em></strong> using triple asterisks.</li>
   <li><del>Strikethrough text</del> using double tildes.</li>
-  <li><code class="language-plaintext highlighter-rouge">Inline code</code> using backticks.</li>
+  <li><code>Inline code</code> using backticks.</li>
   <li><a href="https://example.com">Links</a> using brackets and parentheses.</li>
   <li>Footnotes<sup id="fnref:1"><a href="#fn:1" class="footnote" rel="footnote" role="doc-noteref">1</a></sup> for references.</li>
 </ul>
@@ -283,27 +308,27 @@
 
 <h3 id="inline-code">Inline Code</h3>
 
-<p>Use <code class="language-plaintext highlighter-rouge">print("Hello, World!")</code> for inline code.</p>
+<p>Use <code>print("Hello, World!")</code> for inline code.</p>
 
 <h3 id="code-blocks">Code Blocks</h3>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
-    <span class="c1"># this is a comment
-</span>    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, GitHub Pages!</span><span class="sh">"</span><span class="p">)</span>
-    <span class="k">return</span> <span class="sh">"</span><span class="s">Success</span><span class="sh">"</span>
-</code></pre></div></div>
+<pre><code class="language-python">def hello_world():
+    # this is a comment
+    print("Hello, GitHub Pages!")
+    return "Success"
+</code></pre>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Hello, </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">name</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="nf">greet</span><span class="p">(</span><span class="dl">"</span><span class="s2">World</span><span class="dl">"</span><span class="p">);</span>
-</code></pre></div></div>
+<pre><code class="language-javascript">function greet(name) {
+    console.log("Hello, " + name);
+}
+greet("World");
+</code></pre>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span>
-<span class="k">FROM</span> <span class="n">users</span>
-<span class="k">WHERE</span> <span class="n">active</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">name</span><span class="p">;</span>
-</code></pre></div></div>
+<pre><code class="language-sql">SELECT id, name, email
+FROM users
+WHERE active = 1
+ORDER BY name;
+</code></pre>
 
 <h2 id="math-equations">Math Equations</h2>
 
@@ -415,22 +440,22 @@
 
 <h3 id="bibtex-format">BibTeX Format</h3>
 
-<div class="language-bibtex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">@article</span><span class="p">{</span><span class="nl">smith2020ml</span><span class="p">,</span>
-  <span class="na">title</span><span class="p">=</span><span class="s">{Machine Learning Fundamentals}</span><span class="p">,</span>
-  <span class="na">author</span><span class="p">=</span><span class="s">{Smith, John}</span><span class="p">,</span>
-  <span class="na">journal</span><span class="p">=</span><span class="s">{Journal of AI}</span><span class="p">,</span>
-  <span class="na">year</span><span class="p">=</span><span class="s">{2020}</span><span class="p">,</span>
-  <span class="na">publisher</span><span class="p">=</span><span class="s">{Academic Press}</span>
-<span class="p">}</span>
+<pre><code class="language-bibtex">@article{smith2020ml,
+  title={Machine Learning Fundamentals},
+  author={Smith, John},
+  journal={Journal of AI},
+  year={2020},
+  publisher={Academic Press}
+}
 
-<span class="nc">@inproceedings</span><span class="p">{</span><span class="nl">johnson2019stats</span><span class="p">,</span>
-  <span class="na">title</span><span class="p">=</span><span class="s">{Statistical Methods in Data Science}</span><span class="p">,</span>
-  <span class="na">author</span><span class="p">=</span><span class="s">{Johnson, Alice and Brown, Bob}</span><span class="p">,</span>
-  <span class="na">booktitle</span><span class="p">=</span><span class="s">{Proceedings of the International Conference on Data Science}</span><span class="p">,</span>
-  <span class="na">year</span><span class="p">=</span><span class="s">{2019}</span><span class="p">,</span>
-  <span class="na">organization</span><span class="p">=</span><span class="s">{Springer}</span>
-<span class="p">}</span>
-</code></pre></div></div>
+@inproceedings{johnson2019stats,
+  title={Statistical Methods in Data Science},
+  author={Johnson, Alice and Brown, Bob},
+  booktitle={Proceedings of the International Conference on Data Science},
+  year={2019},
+  organization={Springer}
+}
+</code></pre>
 <div class="footnotes" role="doc-endnotes">
   <ol>
     <li id="fn:1">

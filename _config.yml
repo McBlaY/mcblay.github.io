@@ -1,7 +1,7 @@
 future: true
 
 markdown: kramdown
-highlighter: rouge
+highlighter: none
 kramdown:
   input: GFM
   fenced_code_blocks: true
