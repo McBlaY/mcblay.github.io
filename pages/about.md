@@ -78,8 +78,16 @@ layout: default
 
   <div class="timeline-item">
     <div class="tl-header">
+      <span class="tl-role">Data & Applied Scientist – HydroInformatics</span>
+      <span class="tl-date">Jan 2026 – Present</span>
+    </div>
+    <div class="tl-org">Stealth WFH</div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="tl-header">
       <span class="tl-role">Applied Scientist – HydroInformatics</span>
-      <span class="tl-date">Jun 2024 – Present</span>
+      <span class="tl-date">Jun 2024 – Dec 2025</span>
     </div>
     <div class="tl-org">HULO.AI</div>
   </div>
