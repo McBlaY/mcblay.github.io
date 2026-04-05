@@ -155,9 +155,6 @@ Above is a horizontal rule.
 
 - [External Link](https://example.com)
 - [Internal Link](#main-title-h1)
-- Reference-style links: [Example][1]
-
-[1]: https://example.com
 
 ## Abbreviations
 
