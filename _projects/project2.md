@@ -5,6 +5,7 @@ author: "Michel Torny"
 image: /assets/project2.jpg
 demo: https://example.com/demo2
 code: https://github.com/user/project2
+description: "Cross-platform mobile app for task management. Includes offline sync, notifications, and collaborative features."
 ---
 
 Cross-platform mobile app for task management. Includes offline sync, notifications, and collaborative features.

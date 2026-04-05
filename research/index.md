@@ -18,7 +18,7 @@ layout: default
     </div>
     <div style="flex: 0 0 65%; padding: 10px 16px; color: var(--card-text); display: flex; flex-direction: column; justify-content: space-between; overflow: hidden;">
       <h2 style="margin: 8px 0 4px; font-size: 1em;"><a href="{{ item.url }}" target="_blank" style="color: var(--card-text); text-decoration: none;">{{ item.title }}</a></h2>
-      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ item.excerpt | strip_html | truncatewords: 50 }}</p>
+      <p style="margin: 0 0 6px; font-size: 0.85em; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{{ item.description | default: item.excerpt | strip_html | truncatewords: 50 }}</p>
       <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 8px;">
         <span style="color: var(--muted); font-size: 0.82em;">{{ item.date | date: "%d %b %Y" }}</span>
         <div>

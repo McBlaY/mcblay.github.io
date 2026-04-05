@@ -5,6 +5,7 @@ author: "Michel Torny"
 image: /assets/research5.jpg
 paper: https://example.com/paper5
 code: https://github.com/user/research5
+description: "Studies on improving user interfaces and user experience. This includes gesture recognition, voice interfaces, and adaptive systems."
 ---
 
 Studies on improving user interfaces and user experience. This includes gesture recognition, voice interfaces, and adaptive systems.

@@ -5,6 +5,7 @@ author: "Michel Torny"
 image: /assets/project1.jpg
 demo: https://example.com/demo1
 code: https://github.com/user/project1
+description: "A responsive web application for showcasing portfolios. Built with React and Node.js, featuring dynamic content loading and SEO optimization."
 ---
 
 A responsive web application for showcasing portfolios. Built with React and Node.js, featuring dynamic content loading and SEO optimization.

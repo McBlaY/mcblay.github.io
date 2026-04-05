@@ -5,6 +5,7 @@ author: "Michel Torny"
 image: /assets/project3.jpg
 demo: https://example.com/demo3
 code: https://github.com/user/project3
+description: "Open-source library for creating interactive charts. Supports multiple data formats and export options."
 ---
 
 Open-source library for creating interactive charts. Supports multiple data formats and export options.

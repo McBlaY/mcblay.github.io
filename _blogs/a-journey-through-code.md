@@ -5,6 +5,7 @@ author: "Michel Torny"
 image: /assets/blog3.jpg
 website: https://codejourney.com
 github: https://github.com/user/repo3
+description: "Coding is an adventure. Here, I share my experiences and tips for aspiring developers."
 ---
 
 Coding is an adventure. Here, I share my experiences and tips for aspiring developers. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
