@@ -1,5 +1,11 @@
 future: true
 
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  fenced_code_blocks: true
+
 defaults:
   - scope:
       path: ""
