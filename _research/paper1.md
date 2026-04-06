@@ -218,7 +218,7 @@ Additionally, the proposed method relies only on flow measurement which is non-i
 
 Table 4 and Fig. 8 show the results of the proposed BiLSTM deep AE in comparison with results obtained from traditional night flow analysis methods such as Minimum Night Flow (MNF) analysis and Average Night Flow (ANF). For purposes of fair comparison, the same training period of June - July 2018 was used for computing the MNF and ANF thresholds.
 
-<img src="https://ars.els-cdn.com/content/image/1-s2.0-S147403462300263X-gr8_lrg.jpg" alt="Comparison of Night Flow Analysis Methods" width="800pt" height="auto">
+<img src="https://ars.els-cdn.com/content/image/1-s2.0-S147403462300263X-gr8_lrg.jpg" alt="Comparison of Night Flow Analysis Methods" width="750pt" height="auto">
 
 | Method | Recall | Precision | F1/3 Score | Min Leak Magnitude (l/s) | Leak Savings (€) |
 |--------|--------|-----------|------------|--------------------------|------------------|

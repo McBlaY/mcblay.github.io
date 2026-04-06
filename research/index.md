@@ -12,7 +12,7 @@ layout: default
 <div id="research-cards" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
   {% assign research_sorted = site.research | sort: 'date' | reverse %}
   {% for item in research_sorted %}
-  <div class="research-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 900px; max-width: 95vw; height: 180px;">
+  <div class="research-card" style="display: flex; align-items: stretch; background: var(--card-bg); border-radius: 12px; overflow: hidden; box-shadow: 0 2px 8px rgba(23,0,0,0.08); width: 800px; max-width: 95vw; height: 180px;">
     <div style="flex: 0 0 35%; min-width: 140px; max-width: 240px; background: #fff; display: flex; align-items: center; justify-content: center;">
       <img src="{{ item.image | default: '/assets/research1.jpg' }}" alt="{{ item.title }}" style="width: 100%; height: auto; object-fit: cover; display: block;">
     </div>

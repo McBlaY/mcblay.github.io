@@ -14,7 +14,7 @@ permalink: /
   body { margin:0; background:var(--bg); color:var(--text); transition:background 0.25s,color 0.25s; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; display:flex; flex-direction:column; min-height:100vh; }
   #theme-toggle { position:fixed; top:14px; right:16px; background:rgba(128,128,128,0.25); color:var(--text); border:1px solid rgba(128,128,128,0.4); border-radius:50%; width:40px; height:40px; font-size:1.1em; cursor:pointer; box-shadow:0 2px 8px rgba(0,0,0,0.3); z-index:9999; display:flex; align-items:center; justify-content:center; padding:0; transition:background 0.25s; }
   #theme-toggle:hover { opacity:0.8; }
-  .page-wrap { max-width:900px; margin:0 auto; padding:0 20px 60px; }
+  .page-wrap { max-width:800px; margin:0 auto; padding:0 20px 60px; }
   /* Nav */
   .home-nav { display:flex; justify-content:center; gap:120px; padding:20px 0 16px; }
   .home-nav a { color:var(--accent); text-decoration:none; text-align:center; display:flex; flex-direction:column; align-items:center; gap:6px; font-size:1.1em; }
