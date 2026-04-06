@@ -1,0 +1,32 @@
+# Jekyll
+_site/
+_site
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler
+.bundle/
+vendor/
+
+# Ruby
+*.swp
+*.swo
+*.gem
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.tmp
+
+# Logs
+*.log
+
+# Environment files
+.env
