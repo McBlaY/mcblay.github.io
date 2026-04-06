@@ -111,7 +111,7 @@ layout: default
 
 <!-- Presentations & Guest Talks -->
 <div class="about-section">
-  <h2><i class="fas fa-microphone" style="margin-right:8px;"></i>Presentations & Guest Talks</h2>
+  <h2 id="presentations-guest-talks"><i class="fas fa-microphone" style="margin-right:8px;"></i>Presentations & Guest Talks</h2>
   <ul class="pub-list">
     <li>Torny, H. M., (2024). Improving the Scalability of DMA based Leakage Detection through AI. Nordic Water Conference (NORDIWA), Copenhagen – Denmark. (Oral).</li>
     <li>Torny, H. M., (2024). Scalable District Metering Area Agnostic Leakage Detection. World Water Congress, Canada. (Oral).</li>

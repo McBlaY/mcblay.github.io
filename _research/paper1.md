@@ -1,7 +1,7 @@
 ---
 title: "Robust night flow analysis in water distribution networks"
 image: /assets/images/header.png
-paper: https://www.sciencedirect.com/science/article/pii/S147403462300263X
+paper: https://doi.org/10.1016/j.aei.2023.102135
 code: 
 date: 2026-04-05
 categories: [research, engineering]
