@@ -19,7 +19,7 @@
     };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.27.0/plotly.min.js"></script>
   <script>
     (function() {
       var t = localStorage.getItem('theme') || 'dark';
@@ -133,27 +133,25 @@
       position: absolute;
       top: 8px;
       right: 8px;
-      background: var(--card-bg);
-      border: 1px solid var(--section-border);
+      background: transparent;
+      border: none;
       color: var(--text);
-      padding: 4px 8px;
-      border-radius: 4px;
+      padding: 0;
+      border-radius: 0;
       cursor: pointer;
-      font-size: 12px;
-      opacity: 0;
-      transition: opacity 0.2s, background 0.2s;
+      font-size: 16px;
+      opacity: 1;
+      transition: color 0.2s;
       z-index: 10;
     }
     .copy-container:hover .copy-btn {
       opacity: 1;
     }
     .copy-btn:hover {
-      background: var(--accent);
-      color: var(--bg);
+      color: var(--accent);
     }
     .copy-btn.copied {
-      background: #28a745;
-      color: white;
+      color: #28a745;
     }
     h1, h2 {
       text-align: center;
@@ -226,7 +224,7 @@
 </head>
 <body>
   <button id="theme-toggle" title="Toggle light/dark theme"></button>
-  <div style="max-width: 980px; margin: 0 auto; padding: 32px 20px; flex: 1;">
+  <div style="max-width: 900px; margin: 0 auto; padding: 32px 20px; flex: 1;">
     
     <img src="/assets/project1.jpg" alt="Web Portfolio App" style="width: 100%; height: 200px; margin-bottom: 20px;">
     
@@ -280,16 +278,18 @@
   document.addEventListener('DOMContentLoaded', function() {
     // Add copy buttons to code blocks
     document.querySelectorAll('pre').forEach(function(pre) {
-      if (!pre.querySelector('.copy-btn')) {
-        var container = pre.parentElement;
-        if (!container.classList.contains('copy-container')) {
-          container.classList.add('copy-container');
-          var btn = document.createElement('button');
-          btn.className = 'copy-btn';
-          btn.innerHTML = '<i class="fas fa-copy"></i>';
-          btn.title = 'Copy code';
-          btn.onclick = function() {
-            var code = pre.textContent || pre.innerText;
+      if (!pre.parentElement.classList.contains('copy-container')) {
+        var container = document.createElement('div');
+        container.className = 'copy-container';
+        pre.parentElement.insertBefore(container, pre);
+        container.appendChild(pre);
+        var btn = document.createElement('button');
+        btn.className = 'copy-btn';
+        btn.innerHTML = '<i class="fas fa-copy"></i>';
+        btn.title = 'Copy code';
+        btn.onclick = function() {
+          var code = pre.textContent || pre.innerText;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(code).then(function() {
               btn.innerHTML = '<i class="fas fa-check"></i>';
               btn.classList.add('copied');
@@ -297,18 +297,39 @@
                 btn.innerHTML = '<i class="fas fa-copy"></i>';
                 btn.classList.remove('copied');
               }, 2000);
+            }).catch(function(err) {
+              console.error('Clipboard failed, trying fallback: ', err);
+              fallbackCopy(code);
             });
-          };
-          container.appendChild(btn);
-        }
+          } else {
+            fallbackCopy(code);
+          }
+          function fallbackCopy(text) {
+            var textArea = document.createElement('textarea');
+            textArea.value = text;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+              document.execCommand('copy');
+              btn.innerHTML = '<i class="fas fa-check"></i>';
+              btn.classList.add('copied');
+              setTimeout(function() {
+                btn.innerHTML = '<i class="fas fa-copy"></i>';
+                btn.classList.remove('copied');
+              }, 2000);
+            } catch (err) {
+              console.error('Fallback copy failed: ', err);
+            }
+            document.body.removeChild(textArea);
+          }
+        };
+        container.appendChild(btn);
       }
     });
   });
   </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
   <footer>
-    <div style="max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center;">
+    <div style="max-width:900px;margin:0 auto;display:flex;flex-direction:column;gap:10px;align-items:center;">
       <div class="social-icons">
         <a href="https://github.com/McBlaY" target="_blank" style="color:var(--muted);text-decoration:none;" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" style="color:var(--muted);text-decoration:none;" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
