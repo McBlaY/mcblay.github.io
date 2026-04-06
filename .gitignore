@@ -30,3 +30,11 @@ Thumbs.db
 
 # Environment files
 .env
+
+# Mac Os
+.DS_Store
+
+
+# Folders
+_site/
+_site
