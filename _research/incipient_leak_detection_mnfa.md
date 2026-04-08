@@ -1,5 +1,5 @@
 ---
-title: "Incipient Leak Detection: Deep Learning is Superior!"
+title: "Incipient Leak Detection: Deep Learning AutoEncoder is Superior!"
 image: /assets/images/dl_ae_mnfa.jpg
 paper: https://doi.org/10.1016/j.aei.2023.102135
 code: 
