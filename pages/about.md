@@ -48,7 +48,7 @@ layout: default
       <a href="https://github.com/McBlaY" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
       <a href="https://linkedin.com/in/hoesemicheltornyeviadzi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://x.com/tornymichel" target="_blank" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-      <a href="https://scholar.google.com/citations?user=Hoese+Michel+Tornyeviadzi" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://scholar.google.com/citations?user=n4zzu2UAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
     </div>
   </div>
 </div>
